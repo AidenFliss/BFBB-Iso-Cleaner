@@ -1,0 +1,2 @@
+C:\Users\cflis\Documents\GitHub\BFBB-Iso-Cleaner\bin\Release\netcoreapp3.1\publish\BFBB Iso Cleaner.pdb
+C:\Users\cflis\Documents\GitHub\BFBB-Iso-Cleaner\bin\Release\netcoreapp3.1\publish\BFBB Iso Cleaner.exe

@@ -12,3 +12,17 @@ C:\Users\cflis\source\repos\BFBB Iso Cleaner\BFBB Iso Cleaner\obj\Debug\netcorea
 C:\Users\cflis\source\repos\BFBB Iso Cleaner\BFBB Iso Cleaner\obj\Debug\netcoreapp3.1\BFBB Iso Cleaner.dll
 C:\Users\cflis\source\repos\BFBB Iso Cleaner\BFBB Iso Cleaner\obj\Debug\netcoreapp3.1\BFBB Iso Cleaner.pdb
 C:\Users\cflis\source\repos\BFBB Iso Cleaner\BFBB Iso Cleaner\obj\Debug\netcoreapp3.1\BFBB Iso Cleaner.genruntimeconfig.cache
+C:\Users\cflis\Documents\GitHub\BFBB---TSSM-Iso-Cleaner\bin\Debug\netcoreapp3.1\BFBB Iso Cleaner.exe
+C:\Users\cflis\Documents\GitHub\BFBB---TSSM-Iso-Cleaner\bin\Debug\netcoreapp3.1\BFBB Iso Cleaner.deps.json
+C:\Users\cflis\Documents\GitHub\BFBB---TSSM-Iso-Cleaner\bin\Debug\netcoreapp3.1\BFBB Iso Cleaner.runtimeconfig.json
+C:\Users\cflis\Documents\GitHub\BFBB---TSSM-Iso-Cleaner\bin\Debug\netcoreapp3.1\BFBB Iso Cleaner.runtimeconfig.dev.json
+C:\Users\cflis\Documents\GitHub\BFBB---TSSM-Iso-Cleaner\bin\Debug\netcoreapp3.1\BFBB Iso Cleaner.dll
+C:\Users\cflis\Documents\GitHub\BFBB---TSSM-Iso-Cleaner\bin\Debug\netcoreapp3.1\BFBB Iso Cleaner.pdb
+C:\Users\cflis\Documents\GitHub\BFBB---TSSM-Iso-Cleaner\obj\Debug\netcoreapp3.1\BFBB Iso Cleaner.csproj.AssemblyReference.cache
+C:\Users\cflis\Documents\GitHub\BFBB---TSSM-Iso-Cleaner\obj\Debug\netcoreapp3.1\BFBB Iso Cleaner.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cflis\Documents\GitHub\BFBB---TSSM-Iso-Cleaner\obj\Debug\netcoreapp3.1\BFBB Iso Cleaner.AssemblyInfoInputs.cache
+C:\Users\cflis\Documents\GitHub\BFBB---TSSM-Iso-Cleaner\obj\Debug\netcoreapp3.1\BFBB Iso Cleaner.AssemblyInfo.cs
+C:\Users\cflis\Documents\GitHub\BFBB---TSSM-Iso-Cleaner\obj\Debug\netcoreapp3.1\BFBB Iso Cleaner.csproj.CoreCompileInputs.cache
+C:\Users\cflis\Documents\GitHub\BFBB---TSSM-Iso-Cleaner\obj\Debug\netcoreapp3.1\BFBB Iso Cleaner.dll
+C:\Users\cflis\Documents\GitHub\BFBB---TSSM-Iso-Cleaner\obj\Debug\netcoreapp3.1\BFBB Iso Cleaner.pdb
+C:\Users\cflis\Documents\GitHub\BFBB---TSSM-Iso-Cleaner\obj\Debug\netcoreapp3.1\BFBB Iso Cleaner.genruntimeconfig.cache

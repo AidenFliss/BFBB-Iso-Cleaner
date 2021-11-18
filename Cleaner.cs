@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Diagnostics;
 using System.IO;
 
 namespace BFBB_Iso_Cleaner
@@ -10,81 +9,76 @@ namespace BFBB_Iso_Cleaner
         {
             if (args.Length == 0)
             {
-                string appVersion = "1.7";
-                Console.WriteLine("BFBB Iso Cleaner\nVersion: " + appVersion + "\n\n");
+                string appVersion = "2.1";
+                Log("BFBB Iso Cleaner\nVersion: " + appVersion + "\n");
 
-                Console.WriteLine("Select the game path (Type it due to limited knowledge): \n");
-
-                if (Directory.Exists(Console.ReadLine()))
-                {
-
-                }else
-                {
-                    
-                }
+                Log("Select the game path (Type it due to limited knowledge, type path with main files like sb.ini):");
 
                 string gamePath = "";
-                if (Console.ReadLine() != null)
+                var line = Console.ReadLine();
+                if (Directory.Exists(line))
                 {
                     gamePath = Console.ReadLine();
                 }
-
-                Console.WriteLine("What game is this? (BFBB/TSSM): ");
-
-                string game = "";
-                if (Console.ReadLine() == "BFBB")
+                else
                 {
-                    game = "Battle";
+                    Log("Invalid Path! Exiting...");
+                    Console.ReadKey();
+                    Environment.Exit(1);
                 }
-                else if (Console.ReadLine() == "TSSM")
-                {
-                    game = "Movie";
-                }
-                
+
                 bool putInFolder = false;
 
-                Console.WriteLine("Should deleted files go in a folder? (or get deleted) (Y/N): ");
+                Log("Should deleted files go in a folder? (or get deleted Y = folder, N = delete) (Y/N): ");
 
-                if (Console.ReadLine() == "Y")
+                var ln = Console.ReadLine().ToLower();
+
+                if (ln == "y")
                 {
                     putInFolder = true;
                 }
-                else if (Console.ReadLine() == "N")
+                else if (ln == "n")
                 {
                     putInFolder = false;
                 }
                 else
                 {
-                    Console.WriteLine("Invalid Argument! Changing to N");
+                    Log("Invalid Argument! Changing to N");
+                    putInFolder = false;
                 }
 
-                CleanIso(game, putInFolder, gamePath);
-            }
-        }
-
-        public static void CleanIso(string game, bool putInFolder, string gamePath)
-        {
-            string deletedFilesPath = gamePath;
-            if (game == "Battle")
-            {
-                string[] fileNamesWithPaths = Directory.GetFiles(gamePath);
+                string[] extensions = { ".sdf", ".log", ".mpl", ".lip", ".mpl~", ".scc", ".bat~", ".bat", ".out", ".lop", ".dsf", ".dlf"};
+                string deletedFilesPath = Convert.ToString(Directory.GetParent(gamePath));
+                string[] fileNamesWithPaths = Directory.GetFiles(gamePath,"*",SearchOption.AllDirectories);
                 foreach (string file in fileNamesWithPaths)
                 {
-                    if (file.EndsWith(".sdf"))
+                    foreach (string ext in extensions)
                     {
-                        if (putInFolder == true)
+                        var extensionOfFile = Path.GetExtension(file);
+                        if (extensionOfFile.ToLower() == ext)
                         {
-                            if (Directory.Exists(deletedFilesPath) == false)
+                            if (putInFolder == true)
                             {
-                                Directory.CreateDirectory(deletedFilesPath);
+                                if (Directory.Exists(deletedFilesPath) == false)
+                                {
+                                    Log("Could not find deleted path folder!");
+                                    Directory.CreateDirectory(deletedFilesPath);
+                                    Log("Created deleted path folder!");
+                                }
+                                else
+                                {
+                                    MoveFile(file, deletedFilesPath);
+                                    Log("Moved file: " + file + " To: " + deletedFilesPath);
+                                }
+                            }
+                            else
+                            {
+                                DeleteFile(file);
+                                Log("Deleted file: " + file);
                             }
                         }
                     }
                 }
-            }
-            else if (game == "Movie")
-            {
-
             }
         }
 
@@ -99,6 +93,32 @@ namespace BFBB_Iso_Cleaner
                 Console.WriteLine(e);
                 Console.ReadKey();
                 Environment.Exit(1);
+            }
+        }
+
+        public static void MoveFile(string path, string dest)
+        {
+            try
+            {
+                File.Move(path, dest);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                Console.ReadKey();
+                Environment.Exit(1);
+            }
+        }
+
+        public static void Log(string text)
+        {
+            try
+            {
+                Console.WriteLine(text);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
             }
         }
     }

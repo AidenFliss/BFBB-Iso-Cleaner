@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cflis\\Documents\\GitHub\\BFBB---TSSM-Iso-Cleaner\\BFBB Iso Cleaner.csproj": {}
+    "C:\\Users\\cflis\\Documents\\GitHub\\BFBB-Iso-Cleaner\\BFBB Iso Cleaner.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cflis\\Documents\\GitHub\\BFBB---TSSM-Iso-Cleaner\\BFBB Iso Cleaner.csproj": {
+    "C:\\Users\\cflis\\Documents\\GitHub\\BFBB-Iso-Cleaner\\BFBB Iso Cleaner.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cflis\\Documents\\GitHub\\BFBB---TSSM-Iso-Cleaner\\BFBB Iso Cleaner.csproj",
+        "projectUniqueName": "C:\\Users\\cflis\\Documents\\GitHub\\BFBB-Iso-Cleaner\\BFBB Iso Cleaner.csproj",
         "projectName": "BFBB Iso Cleaner",
-        "projectPath": "C:\\Users\\cflis\\Documents\\GitHub\\BFBB---TSSM-Iso-Cleaner\\BFBB Iso Cleaner.csproj",
+        "projectPath": "C:\\Users\\cflis\\Documents\\GitHub\\BFBB-Iso-Cleaner\\BFBB Iso Cleaner.csproj",
         "packagesPath": "C:\\Users\\cflis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cflis\\Documents\\GitHub\\BFBB---TSSM-Iso-Cleaner\\obj\\",
+        "outputPath": "C:\\Users\\cflis\\Documents\\GitHub\\BFBB-Iso-Cleaner\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

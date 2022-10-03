@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "BFBB Iso Cleaner": {
+      "commandName": "Project",
+      "commandLineArgs": "-gamePathC:\\Users\\cflis\\OneDrive\\Desktop\\bfbb\\files -putFolder false -mode publish",
+      "remoteDebugEnabled": false
+    }
+  }
+}
